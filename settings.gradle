@@ -1,1 +1,1 @@
-include ':billingLibrary', ':billingappdemo'
+include ':billingLibrary'
