@@ -295,11 +295,10 @@ public class IabHelper {
                 listener.onIabSetupFinished(
                         new IabResult(BILLING_RESPONSE_RESULT_BILLING_UNAVAILABLE,
                                 "Billing service unavailable on device."));
-                mServiceConn = null;
-                //avoid http://y188ra.blogspot.com/2013_11_01_archive.html
-                //ava.lang.IllegalArgumentException: Service not registered:
-
             }
+            mServiceConn = null;
+            //avoid http://y188ra.blogspot.com/2013_11_01_archive.html
+            //ava.lang.IllegalArgumentException: Service not registered:
         }
     }
 
